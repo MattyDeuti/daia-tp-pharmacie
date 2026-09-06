@@ -72,40 +72,49 @@ qu'on te parle d'**ouvrir**, de **regarder**, de **traiter**, d'**instruire** ou
 à** une demande. Quels que soient les mots employés, **y compris quand la phrase se réduit à
 `go` suivi de la référence**.*
 
-**Cinq étapes, dans cet ordre, et tu n'en sautes aucune.** À la fin de chaque étape, **écris le
-résultat obtenu** dans `livraison/<référence>/` sous le nom indiqué, **puis annonce le fichier
-créé avant de passer à la suivante**.
+**Cinq étapes, dans cet ordre, et tu n'en sautes aucune.**
 
-1. **Lis** `demandes/<référence>.md` en entier, puis applique
+1. **Lis** `demandes/<référence>.md` en entier, puis applique la procédure
    `.github/skills/analyse-de-demande/SKILL.md`, à la lettre, y compris son format de sortie.
+   **Une procédure, ça se lit et ça s'applique — c'est le seul fichier de la chaîne que tu ouvres.**
    → `livraison/<référence>/1-analyse.md`
 
-2. **Lance l'agent `explorateur-de-code`** (`.github/agents/explorateur-de-code.agent.md`) en
-   lui passant les critères d'acceptation obtenus à l'étape 1.
+2. **Délègue à l'agent `explorateur-de-code`** les critères d'acceptation de l'étape 1.
    → `livraison/<référence>/2-impact-technique.md`
 
-3. **Lance l'agent `testeur-qa`** (`.github/agents/testeur-qa.agent.md`) en lui passant les
-   critères de l'étape 1 **et** le relevé de l'étape 2.
+3. **Délègue à l'agent `testeur-qa`** les critères de l'étape 1 **et** le relevé de l'étape 2.
    → `livraison/<référence>/3-plan-de-verification.md`
 
-4. **Lance l'agent `gardien-des-regles`** (`.github/agents/gardien-des-regles.agent.md`) en lui
-   passant la demande d'origine et les critères de l'étape 1.
+4. **Délègue à l'agent `gardien-des-regles`** la demande d'origine et les critères de l'étape 1.
    → `livraison/<référence>/4-controle-des-regles.md`
 
-5. **Lance l'agent `traducteur-metier`** (`.github/agents/traducteur-metier.agent.md`) en lui
-   passant **l'ensemble des quatre résultats précédents**, et rends **sa** version, pas la
-   tienne.
+5. **Délègue à l'agent `traducteur-metier`** **l'ensemble des quatre résultats précédents**, et
+   rends **sa** version, pas la tienne.
    → `livraison/<référence>/5-reponse-au-metier.md`, **que tu ouvres dans l'éditeur.**
 
-**Trois bornes, et elles ne se négocient pas :**
+#### Ce que tu affiches, à chaque étape
 
+**Avant d'écrire le fichier, tu fais apparaître dans ta réponse, dans cet ordre :**
+
+- **le marqueur rendu par la brique, seul sur sa ligne**, tel qu'elle l'a écrit ;
+- **puis son résultat** — en entier s'il est court, sinon ses dix premières lignes.
+
+⛔ **« Fichier créé : 2-impact-technique.md » ne prouve rien et ne se dit pas.** Un nom de
+fichier n'est pas un résultat. **Ce qui compte est à l'écran, pas dans un chemin.**
+
+#### Quatre bornes, et elles ne se négocient pas
+
+- ⛔ **Tu n'ouvres jamais le fichier de définition d'un agent.** Les `.agent.md` ne sont pas des
+  notices à appliquer toi-même : ce sont des agents à lancer, par leur nom. **Si tu ouvres
+  `explorateur-de-code.agent.md`, tu ne l'as pas lancé — tu l'as remplacé.** Et si tu ne peux
+  pas déléguer, **tu le dis** au lieu de faire le travail à sa place.
 - **Tu n'écris nulle part ailleurs que dans `livraison/`.** Ni dans le code, ni dans la demande,
   ni dans ce fichier. La chaîne instruit une demande ; elle ne l'implémente pas.
 - **Tu ne t'arrêtes pas si le verdict de l'étape 4 n'est pas « CONFORME ».** Tu vas jusqu'au
   bout, et la réserve part avec le reste à l'étape 5. **Un contrôle qui bloque la chaîne prive
   le métier de sa réponse.**
-- **Tu ne fais le travail d'aucun des quatre agents à leur place**, même si tu penses savoir
-  répondre plus vite. Chacun est lancé, ou l'étape n'a pas eu lieu.
+- **Tu ne résumes le travail d'aucune des quatre étapes précédentes.** Chacune est lancée et
+  affichée, ou elle n'a pas eu lieu.
 
 ### ▸ Enregistrer, sauvegarder, publier, envoyer un travail
 
