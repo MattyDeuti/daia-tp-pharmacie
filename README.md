@@ -35,6 +35,7 @@ allez travailler, et la configuration que vos outils lisent.
 | `apprenant/a-supprimer/` | Votre brouillon jetable des deux jours |
 | `src/main/java/GestionStock.java` | Le code legacy (701 lignes, Java + SQL) |
 | `db/schema_extensions.sql` | Le schéma de base de données associé |
+| `demandes/` | **Les demandes du métier**, telles qu'elles arrivent. En lecture seule : elles ne se corrigent pas, elles se traitent |
 | `src/test/java/` | Vide pour l'instant : **c'est vous** (et votre IA) qui le remplirez |
 | `formateur/prompt_demo/` | Les prompts des démonstrations du formateur, si vous voulez les rejouer |
 | `formateur/demo-index/` | **Le `AGENTS.md` complet de la dernière démonstration** — le meilleur modèle du kit si vous écrivez le vôtre |
@@ -54,9 +55,11 @@ charge tout seul.
 | `.vscode/mcp.json` | **Les accès** : les prises qu'on branche à l'assistant | quand il a besoin de l'outil |
 
 `AGENTS.md` et le dossier des agents sont **volontairement à trous** : ce sont eux que vous
-remplirez pendant le TP « la couche de l'équipe ». Un seul agent s'y trouve déjà,
-`traducteur-metier.agent.md` — celui du formateur. **Ouvrez-le : c'est un agent réel, écrit avec
-les champs réels**, et c'est le plus court chemin pour voir à quoi ressemble la chose.
+remplirez pendant le TP « la couche de l'équipe ». **Quatre agents s'y trouvent déjà** — ceux du
+formateur, pour la dernière démonstration : `explorateur-de-code`, `testeur-qa`,
+`gardien-des-regles` et `traducteur-metier`. **Ouvrez-en un : ce sont des agents réels, écrits
+avec les champs réels, et tous les quatre en lecture seule.** C'est le plus court chemin pour
+voir à quoi ressemble la chose.
 
 ## Brancher un accès (MCP)
 

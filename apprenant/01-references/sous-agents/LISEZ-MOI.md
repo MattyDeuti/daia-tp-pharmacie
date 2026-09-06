@@ -108,10 +108,11 @@ tâche volumineuse, c'est ce qui vous évite d'arriver à saturation.
 > ⛔ **L'extension complète est `.agent.md`, pas `.md`.** Un fichier nommé `relecteur.md` ne
 > charge pas, et **rien ne vous le signalera**.
 
-**Dans ce projet :** `.github/agents/` attend le vôtre. Un seul fichier s'y trouve déjà,
-`traducteur-metier.agent.md`, celui du formateur — **un agent réel, en lecture seule, avec ses
-cinq champs remplis**. Il fait un tout autre métier que celui du TP : ouvrez-le pour voir la
-forme, pas pour le recopier.
+**Dans ce projet :** `.github/agents/` attend le vôtre. **Quatre fichiers s'y trouvent déjà**,
+ceux du formateur — `explorateur-de-code`, `testeur-qa`, `gardien-des-regles` et
+`traducteur-metier`. **Des agents réels, tous en lecture seule, avec leurs cinq champs
+remplis.** Ils font de tout autres métiers que celui du TP : ouvrez-les pour voir la forme, pas
+pour les recopier.
 
 ---
 

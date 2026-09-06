@@ -2,10 +2,21 @@
 
 Ce dossier attend **le vôtre**, et c'est vous qui allez l'écrire pendant le TP.
 
-Un seul fichier s'y trouve déjà : `traducteur-metier.agent.md`, celui du formateur — il sert à
-la démonstration de fin de jour 2. **Il fait un tout autre métier que le vôtre**, mais c'est un
-agent réel, écrit avec les champs réels. Ouvrez-le : c'est le plus court chemin pour voir à quoi
-ressemble la chose avant d'en écrire une.
+**Quatre fichiers s'y trouvent déjà**, et ils sont au formateur : ce sont les agents de la
+démonstration de fin de jour 2. **Ils font de tout autres métiers que le vôtre**, mais ce sont
+des agents réels, écrits avec les champs réels, et tous les quatre en **lecture seule**.
+Ouvrez-en un : c'est le plus court chemin pour voir à quoi ressemble la chose avant d'en écrire
+une.
+
+| L'agent | Son métier |
+|---|---|
+| `explorateur-de-code.agent.md` | dire **où** une demande viendrait toucher le code |
+| `testeur-qa.agent.md` | écrire **ce qu'il faudra vérifier**, geste par geste |
+| `gardien-des-regles.agent.md` | confronter une demande **aux règles dures du projet** |
+| `traducteur-metier.agent.md` | réécrire un texte technique **pour qui ne programme pas** |
+
+> **Regardez leur champ `tools` : aucun des quatre n'a le droit d'écrire.** Ils rendent des
+> rapports, jamais des modifications. C'est le réglage, pas la consigne, qui le garantit.
 
 ## Ce qu'on y range
 
@@ -81,12 +92,16 @@ C'est le réglage à garder tant que vous n'avez pas une raison de faire autreme
 > faute de syntaxe : c'est un **champ réel mal réglé** — le nom, ou la visibilité. On ne cherche
 > pas une virgule, on relit la liste ci-dessus.
 
-## Deux exemples à lire
+## Trois exemples à lire
 
-**`traducteur-metier.agent.md`, ici même.** Un agent réel, en lecture seule, avec ses cinq champs
-remplis. Regardez surtout deux choses : la `description`, qui dit **quand** s'en servir et pas
-seulement ce qu'il fait, et le champ des droits, qui l'empêche par construction de modifier quoi
-que ce soit.
+**`gardien-des-regles.agent.md`, ici même — commencez par celui-là.** Il montre la chose la
+moins évidente du lot : un agent utile **qui n'a le droit de rien faire**. Il lit la charte, il
+constate, il propose — et il ne peut, par construction, rien changer. Regardez surtout sa
+`description`, qui dit **quand** s'en servir et pas seulement ce qu'il fait.
+
+**`explorateur-de-code.agent.md`.** Le même réglage de droits, pour un tout autre métier. Il
+dit ce qu'il rend, dans quel ordre, et **ce qu'il ne fait jamais** — cette dernière liste est
+souvent plus utile que la première.
 
 **`.github/skills/git-workflow/SKILL.md`, le dossier voisin.** Ce n'est pas un agent, mais c'est le
 même genre d'objet : un fichier de texte, versionné dans le dépôt, que l'assistant charge quand il

@@ -34,12 +34,17 @@ remontés au module 6). Rien n'est supprimé.
 
 ## La dernière n'a pas la même préparation que les autres
 
-**`J2-slide232-demo9.md` demande deux gestes avant d'ouvrir la bouche** : armer le fichier, et
-laisser des modifications non publiées dans le dépôt. Les deux sont expliqués dans
+**`J2-slide232-demo9.md` demande deux gestes avant d'ouvrir la bouche** : armer le fichier
+(`Copy-Item`) et vider `livraison/`. Les deux sont expliqués dans
 `formateur/demo-index/LISEZ-MOI.md`. Le déroulé minuté, lui, vit **hors du dépôt**, côté
-formateur : `Big Training/demos/J2-slide232-DEMO09-lindex-montre-pour-de-vrai.md`.
+formateur, dans `Big Training/demos/`.
 
-C'est aussi la seule qui tourne sur un **autre modèle** — Gemini 3.5 Flash, avec Sonnet en repli.
+> 🆕 **Depuis le 06/09, elle n'exige plus de modifications non publiées dans le dépôt.** Sa
+> chaîne porte sur une demande figée et versionnée, `demandes/DEM-042.md` : elle se rejoue à
+> l'identique autant de fois qu'on veut, y compris après un `git reset --hard`.
+
+C'est aussi celle qui demande le plus au modèle : **cinq étapes et quatre agents délégués**. Un
+petit modèle rapide saute des étapes. **Le choix se tranche au drill.**
 
 ## Le nom du fichier
 
