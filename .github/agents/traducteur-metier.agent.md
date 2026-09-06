@@ -2,8 +2,7 @@
 name: traducteur-metier
 description: "Reformule un texte technique pour quelqu'un qui ne programme pas : ce que ça change pour l'officine, pas ce que ça change dans le code. Il ne relit pas de code, ne juge pas la qualité, et ne modifie aucun fichier."
 argument-hint: "Le texte à reformuler — un dossier d'analyse de demande, ou un compte rendu de modifications."
-tools: ["read", "search"]
-agents: []
+tools: [read, search]
 user-invocable: true
 ---
 

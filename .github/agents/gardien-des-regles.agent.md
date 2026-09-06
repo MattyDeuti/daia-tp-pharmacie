@@ -2,8 +2,7 @@
 name: gardien-des-regles
 description: "Confronte une demande aux trois règles dures de la charte du projet et rend un verdict motivé. Pour chaque point qui accroche, il cite la règle, dit ce qui la déclenche, et propose une reformulation conforme. Il contrôle, il ne corrige rien et ne modifie aucun fichier."
 argument-hint: "Une demande, ou son analyse en critères d'acceptation."
-tools: ["read", "search"]
-agents: []
+tools: [read, search]
 user-invocable: true
 ---
 

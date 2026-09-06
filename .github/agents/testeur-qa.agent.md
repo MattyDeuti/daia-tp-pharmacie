@@ -2,8 +2,7 @@
 name: testeur-qa
 description: "Écrit le plan de vérification d'une demande : quel geste, sur quel écran, avec quelle attente, et ce qui reste invérifiable en l'état. Il prépare la recette, il ne code pas les tests et ne modifie rien."
 argument-hint: "Les critères d'acceptation d'une demande, et le relevé des points de contact dans le code."
-tools: ["read", "search"]
-agents: []
+tools: [read, search]
 user-invocable: true
 ---
 

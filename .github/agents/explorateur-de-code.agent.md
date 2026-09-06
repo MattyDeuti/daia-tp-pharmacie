@@ -2,8 +2,7 @@
 name: explorateur-de-code
 description: "Dit où une demande viendrait toucher le code existant : les fichiers, les méthodes, les tables, avec les chemins et les numéros de ligne. Il constate l'existant, il ne conçoit pas la solution et ne modifie rien."
 argument-hint: "Les critères d'acceptation d'une demande, ou la demande elle-même."
-tools: ["read", "search"]
-agents: []
+tools: [read, search]
 user-invocable: true
 ---
 
