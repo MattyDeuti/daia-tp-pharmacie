@@ -69,5 +69,9 @@ PROCEDURE-ANALYSE-APPLIQUEE
 - <repris avec les mots du métier>
 ```
 
-**Si la demande ne contient rien d'ambigu, écris « rien » sous la troisième section.** Une liste
-vide vaut mieux qu'une liste plausible.
+> ⛔ **Les quatre sections sont obligatoires, et tu les rends toutes les quatre.** Une section
+> sans contenu s'écrit **`rien`** ; une section **absente** veut dire que l'étape n'a pas été
+> faite. Les deux dernières sont les plus faciles à laisser tomber et les plus utiles à celui qui
+> lira : elles disent ce qui n'est pas décidé, et ce qu'on ne fera pas.
+
+**Une liste vide vaut mieux qu'une liste plausible.**
