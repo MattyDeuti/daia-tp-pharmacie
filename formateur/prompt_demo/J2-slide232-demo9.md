@@ -12,8 +12,8 @@ la racine du kit*
 > Remove-Item livraison -Recurse -Force -ErrorAction SilentlyContinue
 > ```
 >
-> Puis *Reload Window*, puis **conversation neuve**. Le mode d'emploi complet est dans
-> `formateur/demo-index/LISEZ-MOI.md`.
+> Puis *Reload Window*, puis **conversation neuve**. La même séquence, en version carte à coller,
+> est dans `formateur/demo-index/LISEZ-MOI.md`.
 >
 > **Il n'y a plus rien d'autre à préparer.** Pas de modifications non publiées, pas de dépôt
 > sali : la chaîne porte sur `demandes/DEM-042.md`, qui est committé et ne bouge jamais.

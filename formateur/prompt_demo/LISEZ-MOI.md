@@ -35,7 +35,7 @@ remontés au module 6). Rien n'est supprimé.
 ## La dernière n'a pas la même préparation que les autres
 
 **`J2-slide232-demo9.md` demande deux gestes avant d'ouvrir la bouche** : armer le fichier
-(`Copy-Item`) et vider `livraison/`. Les deux sont expliqués dans
+(`Copy-Item`) et vider `livraison/`. La séquence nue, sans commentaire, est dans
 `formateur/demo-index/LISEZ-MOI.md`. Le déroulé minuté, lui, vit **hors du dépôt**, côté
 formateur, dans `Big Training/demos/`.
 
